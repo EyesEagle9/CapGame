@@ -45,6 +45,11 @@
       text-align: center;
     }
 
+    .goals {
+      font-family: 'emizen', sans-serif;
+      font-size: 1.2em;
+    }
+
     /* ICON */
     .icon {
       display: inline-block;
@@ -56,6 +61,42 @@
       display: flex;
       flex-wrap: nowrap;
       margin: 20px;
+    }
+
+    .fa-solid,
+    .fa-brands {
+      padding: 15px;
+      font-size: 50px;
+
+      text-decoration: none;
+      display: inline-block;
+      margin: 10px;
+    }
+
+    .fa-user-group,
+    .fa-xbox,
+    .fa-gamepad-modern {
+      border-radius: 50%;
+      color: darkred;
+      margin-bottom: 0px;
+      padding: 50px;
+      margin-left: 250px;
+      margin-right: 250px;
+      font-size: 3.0em;
+      padding-left: 50px;
+    }
+
+    .cercle {
+      background-color: darkblue;
+      padding: 20px;
+      height: 20px;
+      width: 50px;
+      border: 3px solid black;
+      border-radius: 50%;
+    }
+
+    figcaption {
+      font-family: 'hagane', sans-serif;
     }
 
     /* FOOTER */
@@ -141,7 +182,7 @@
   <div id="listGoals">
     <div class="icon 1">
       <div class="icon">
-        <i class="fa-solid fa-house cercle"></i>
+        <i class="fa-solid fa-user-group cercle"></i>
         <figure>
           <figcaption>Jouer ensemble</figcaption>
         </figure>
@@ -149,7 +190,7 @@
     </div>
     <div class="icon 2">
       <div class="icon">
-        <i class="fa-solid fa-phone cercle"></i>
+        <i class="fa-brands fa-xbox cercle"></i>
         <figure>
           <figcaption>Outils et logiciels</figcaption>
         </figure>
@@ -157,7 +198,7 @@
     </div>
     <div class="icon 3">
       <div class="icon">
-        <i class="fa-solid fa-envelope cercle"></i>
+        <i class="fa-solid fa-gamepad-modern cercle"></i>
         <figure>
           <figcaption>Tester les jeux</figcaption>
         </figure>
