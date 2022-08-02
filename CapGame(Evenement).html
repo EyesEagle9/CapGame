@@ -44,9 +44,8 @@
     #evenement {
       margin-top: 20px;
       display: flex;
-      flex-direction: column;
       justify-content: center;
-      row-gap: 10px;
+      column-gap: 50px;
       margin: 20px;
     }
 
@@ -65,6 +64,31 @@
       border-radius: 40px 40px 40px 40px;
       margin-right: 0px;
       margin-left: 0px;
+    }
+
+    figcaption {
+      font-family: 'hagane', sans-serif;
+    }
+
+    .present {
+      font-family: 'himagsikan-italic', sans-serif;
+      font-size: 1.5em;
+    }
+
+    .otherEvents {
+      text-align: center;
+      font-family: 'hagane', sans-serif;
+      font-size: 1.8em;
+    }
+
+    .takeThePlace {
+      width: 430px;
+      font-size: 1.6em;
+      margin-bottom: 20px;
+      color: darkred;
+      -webkit-border-radius: 40px 40px 40px 40px;
+      -moz-border-radius: 40px 40px 40px 40px;
+      border-radius: 40px 40px 40px 40px;
     }
 
     /* FOOTER */
@@ -150,21 +174,36 @@
     <div id="evenement">
       <div class="evenement 1">
         <div class="picture">
-          <img src="src/Overwatch-Esports-World-Cup-2017-1068x417.jpg" alt="Overwatch" width="700px" height="400px">
+          <img src="src/japan-expo.jpeg" alt="JaponExpo Sud" width="900px" height="400px">
           <figure>
-            <figcaption>Overwatch Wolrd Cup</figcaption>
+            <figcaption>
+              <h3>JaponExpo Sud (Du 24 au 26 fevrier 2023)</h3>
+              <p class="present">Venez fêter la culture japonaise avec nous ! Les fans de pop culture et les curieux en
+                tout genre, pour leur permettre de profiter de leur passion et leur faire découvrir le pays du soleil
+                levant, sa culture et ses talents.</p>
+            </figcaption>
           </figure>
+          <button type="button" class="takeThePlace">Réserver la place/Acheter le ticket</button>
         </div>
       </div>
       <div class="evenement 2">
         <div class="picture">
-          <img src="src/Paris game Week.jpeg" alt="ParisGameWeek" width="700px" height="400px">
+          <img src="src/Paris game Week.jpeg" alt="ParisGameWeek" width="900px" height="400px">
           <figure>
-            <figcaption>Paris Game Week</figcaption>
+            <figcaption>
+              <h3>Paris Game Week (Du 2 au 6 novembre 2022)</h3>
+              <p class="present">La Paris Games Week est le plus grand salon français de jeu video. Découvrez les
+                differents dispositifs
+                mise en place
+                sur le salon pour rendre le jeu vidéo et la Paris Games Week plus accessibles aux personnes en situation
+                de handicap.</p>
+            </figcaption>
           </figure>
+          <button type="button" class="takeThePlace">Réserver la place/Acheter le ticket</button>
         </div>
       </div>
     </div>
+    <p class="otherEvents">D'AUTRES EVENEMENTS A VENIR PROCHAINEMENT...</p>
   </section>
 
   <footer>
