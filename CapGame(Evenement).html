@@ -40,6 +40,21 @@
       font-family: 'emizen', sans-serif;
     }
 
+    /* SECTION */
+    #listEvenement {
+      display: flex;
+      flex-wrap: nowrap;
+    }
+
+    .imgOne {
+      display: inline-block;
+      text-align: center;
+      margin-left: 200px;
+      margin-top: 20px;
+      margin-bottom: 30px;
+    }
+
+
 
 
     /* FOOTER */
@@ -117,6 +132,33 @@
       <li><a href="#">Contact</a></li>
     </ul>
   </header>
+
+  <section>
+    <div id="listEvenement">
+      <div class="EvenementOne">
+        <img src="src/Overwatch-Esports-World-Cup-2017-1068x417.jpg" width="600px" height="400px" class="imgOne">
+        <h2 class="evenement">Overwatch World Cup</h2>
+        <p class="conference">L'e-sport d'Overwatch est un spectacle qui convient à tous : des séries de tournois où se
+          défient des joueurs
+          de tous niveaux, des parties intenses commentées par les meilleurs
+          présentateurs et des équipes talentueuses venues des quatre coins du monde.</p>
+        <button type="button" data-bs-target="modal">Réserver la place/Acheter un ticket</button>
+      </div>
+
+      <div class="EvenementOne">
+        <img src="src/Paris game Week.jpeg" width="600px" height="400px" class="imgOne">
+        <h2 class="evenement">Paris Game Week</h2><br />
+        <p class="conference">Découvrez les différents dispositifs mise en place sur le salon pour rendre le jeu vidéo
+          et la Paris Games
+          Week
+          plus accessibles aux personnes en situation de handicap.
+          Découvrez les différents dispositifs mise en place sur le salon pour rendre le jeu vidéo et la Paris Games
+          Week
+          plus accessibles aux personnes en situation de handicap.</p>
+        <button type="button" data-bs-target="modal">Réserver la place/Acheter un ticket</button>
+      </div>
+    </div>
+  </section>
 
   <footer>
     <p class="copyright">CAPGAME&copy;2022</p>
