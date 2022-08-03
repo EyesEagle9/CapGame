@@ -163,10 +163,14 @@
       src: url('../CapGame/src/hagane.ttf') format('truetype');
     }
 
+    /* MEDIA QUERRY */
     @media all and (max-width: 980px) {
+
+
+      /* HEADER */
       header {
-        width: 200%;
-        font-size: 1.8em;
+        width: 220%;
+        font-size: 2.0em;
       }
 
       li {
@@ -178,17 +182,61 @@
         margin-top: 30px;
       }
 
-      section {
-        width: 180%;
+      /* SECTION & ICON */
+      #sectionResponsive {
+        width: 200%;
         font-size: 1.8em;
       }
 
-      footer {
-        width: 200%;
-
+      .cercle {
+        width: 40%;
+        height: 35%;
       }
 
 
+
+
+      /* FOOTER */
+      #footResponsive {
+        width: 220%;
+        font-size: 2.0em;
+      }
+
+      .copyright {
+        margin-right: 30px;
+        margin-left: 30px;
+        margin-top: 20px;
+      }
+
+      .foot {
+        text-align: center;
+        margin-right: 25%;
+        margin-left: 25%;
+        margin-top: 30px;
+      }
+
+      .contact {
+        margin-top: 20px;
+        display: flex;
+        column-gap: 5px;
+      }
+
+      .fa {
+        padding: 10px;
+        font-size: 40px;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin: 10px;
+      }
+
+      .fa-facebook,
+      .fa-twitter,
+      .fa-youtube {
+        background: #3B5998;
+        color: white;
+        margin: 10px;
+      }
 
     }
   </style>
@@ -203,44 +251,47 @@
       <li><a href="#">Contact</a></li>
     </ul>
   </header>
-  <section>
-    <p class="goals">De Nombreuses personnes ne peuvent plus jouer aux jeux vidéo en raison de leurs handicaps, c'est
-      pourquoi
-      l'association a été fondée dans le but de: <br />
-      rendre accessible les jeux aux différentes types de personnes handicapées : qu'elles soient physiques, mentales,
-      et sensorielles à l'aide des outils et des logiciels <br />
-      que les studios de développement et les éditeurs ont mis en place pour faciliter leurs modes de vies.</p>
-    <img src="src/gamer handicapé.jpg" width="1200px" height="600px">
-  </section>
 
-  <div id="listGoals">
-    <div class="icon 1">
-      <div class="icon">
-        <i class="fa-solid fa-user-group cercle"></i>
-        <figure>
-          <figcaption>Jouer ensemble</figcaption>
-        </figure>
+  <div id="sectionResponsive">
+    <section>
+      <p class="goals">De Nombreuses personnes ne peuvent plus jouer aux jeux vidéo en raison de leurs handicaps, c'est
+        pourquoi
+        l'association a été fondée dans le but de: <br />
+        rendre accessible les jeux aux différentes types de personnes handicapées : qu'elles soient physiques, mentales,
+        et sensorielles à l'aide des outils et des logiciels <br />
+        que les studios de développement et les éditeurs ont mis en place pour faciliter leurs modes de vies.</p>
+      <img src="src/gamer handicapé.jpg" width="1200px" height="600px">
+    </section>
+
+    <div id="listGoals">
+      <div class="icon 1">
+        <div class="icon">
+          <i class="fa-solid fa-user-group cercle"></i>
+          <figure>
+            <figcaption>Jouer ensemble</figcaption>
+          </figure>
+        </div>
       </div>
-    </div>
-    <div class="icon 2">
-      <div class="icon">
-        <i class="fa-brands fa-xbox cercle"></i>
-        <figure>
-          <figcaption>Outils et logiciels</figcaption>
-        </figure>
+      <div class="icon 2">
+        <div class="icon">
+          <i class="fa-brands fa-xbox cercle"></i>
+          <figure>
+            <figcaption>Outils et logiciels</figcaption>
+          </figure>
+        </div>
       </div>
-    </div>
-    <div class="icon 3">
-      <div class="icon">
-        <i class="fa-solid fa-gamepad cercle"></i>
-        <figure>
-          <figcaption>Tester les jeux</figcaption>
-        </figure>
+      <div class="icon 3">
+        <div class="icon">
+          <i class="fa-solid fa-gamepad cercle"></i>
+          <figure>
+            <figcaption>Tester les jeux</figcaption>
+          </figure>
+        </div>
       </div>
     </div>
   </div>
 
-  <footer>
+  <footer id="footResponsive">
     <p class="copyright">CAPGAME&copy;2022</p>
     <h2 class="foot">CapGame</h2>
     <div class="contact">
