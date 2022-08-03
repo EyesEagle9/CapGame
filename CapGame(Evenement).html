@@ -6,6 +6,7 @@
   <title>CapGame (Objectifs)</title>
   <meta name="viewport" content="width=device-width" />
   <script src="https://kit.fontawesome.com/2d33046217.js" crossorigin="anonymous"></script>
+  <meta name="viewport" content="width: device-width">
   <style>
     body {
       margin: auto;
@@ -81,7 +82,8 @@
       font-size: 1.8em;
     }
 
-    .takeThePlace {
+    .takeThePlace1,
+    .takeThePlace2 {
       width: 430px;
       font-size: 1.6em;
       margin-bottom: 20px;
@@ -156,6 +158,9 @@
       font-family: 'hagane';
       src: url('../CapGame/src/hagane.ttf') format('truetype');
     }
+
+    /* MEDIA QUERRY */
+    @media all and (max-width: 980px) {}
   </style>
 </head>
 
@@ -182,7 +187,7 @@
                 levant, sa culture et ses talents.</p>
             </figcaption>
           </figure>
-          <button type="button" class="takeThePlace">Réserver la place/Acheter le ticket</button>
+          <button type="button" class="takeThePlace1">Réserver la place/Acheter le ticket</button>
         </div>
       </div>
       <div class="evenement 2">
@@ -198,7 +203,7 @@
                 de handicap.</p>
             </figcaption>
           </figure>
-          <button type="button" class="takeThePlace1" data-bs-target="modal">Réserver la place/Acheter le
+          <button type="button" class="takeThePlace2" data-bs-target="modal">Réserver la place/Acheter le
             ticket</button>
         </div>
       </div>
@@ -217,7 +222,7 @@
   </footer>
 
   <!-- MODAL -->
-  <div class="modal fade" id="takeTheTicket1">
+  <!-- <div class="modal fade" id="takeTheTicket1">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
@@ -250,7 +255,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 </body>
 
 </html>
