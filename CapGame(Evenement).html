@@ -9,8 +9,8 @@
   <meta name="viewport" content="width: device-width">
   <style>
     body {
-      margin: auto;
-      display: block;
+      margin: 0;
+      padding: 0;
     }
 
     /* HEADER */
@@ -112,7 +112,7 @@
     .foot {
       text-align: center;
       margin-right: 680px;
-      margin-left: 680px;
+      margin-left: 670px;
       font-size: 1.3em;
       font-family: 'hagane', sans-serif;
       margin-top: 30px;
@@ -160,7 +160,82 @@
     }
 
     /* MEDIA QUERRY */
-    @media all and (max-width: 980px) {}
+    @media all and (max-width: 980px) {
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      /* HEADER */
+      header {
+        width: 220%;
+        font-size: 2.0em;
+      }
+
+      li {
+        display: inline;
+        margin: 160px;
+      }
+
+      ul {
+        margin-top: 30px;
+      }
+
+      /* SECTION & ICON */
+      section {
+        width: 220%;
+        font-size: 1.8em;
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+
+      section img {
+        width: 100%;
+      }
+
+      .present {
+        font-family: 'emizen', sans-serif;
+      }
+
+      /* FOOTER */
+      #footResponsive {
+        width: 220%;
+        font-size: 2.0em;
+      }
+
+      .copyright {
+        margin-right: 30px;
+        margin-left: 10px;
+        margin-top: 20px;
+      }
+
+      .foot {
+        text-align: center;
+        margin-right: 25%;
+        margin-left: 30%;
+        margin-top: 30px;
+      }
+
+      .contact {
+        margin-top: 20px;
+        display: flex;
+        column-gap: 5px;
+      }
+
+      .fa {
+        padding: 10px;
+        font-size: 40px;
+        width: 50px;
+        height: 50px;
+        margin: 10px;
+      }
+
+      .fa-facebook,
+      .fa-twitter,
+      .fa-youtube {
+        margin: 10px;
+      }
+    }
   </style>
 </head>
 
@@ -211,7 +286,7 @@
     <p class="otherEvents">D'AUTRES EVENEMENTS A VENIR PROCHAINEMENT...</p>
   </section>
 
-  <footer>
+  <footer id="footResponsive">
     <p class="copyright">CAPGAME&copy;2022</p>
     <h2 class="foot">CapGame</h2>
     <div class="contact">
